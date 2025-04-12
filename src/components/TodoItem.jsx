@@ -7,7 +7,6 @@ function TodoItem({ todo, toggle, remove }) {
           : "bg-gradient-to-r from-white to-blue-50"
       }`}
     >
-      {/* Header */}
       <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center rounded-t-3xl">
         <h2 className="text-lg font-semibold text-blue-600">
           {todo.completed ? "Completed Task" : "Active Task"}
@@ -15,7 +14,6 @@ function TodoItem({ todo, toggle, remove }) {
         <span className="text-xs text-gray-400">ID: {todo.id}</span>
       </div>
 
-      {/* Body */}
       <div className="px-6 py-5 flex items-start gap-4">
         <input
           type="checkbox"
@@ -37,7 +35,6 @@ function TodoItem({ todo, toggle, remove }) {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="px-6 py-4 border-t border-gray-200 flex justify-end items-center gap-3 rounded-b-3xl">
         <button
           onClick={() => remove(todo.id)}
