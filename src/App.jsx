@@ -44,7 +44,7 @@ function App() {
         />
         <button
           onClick={addTodo}
-          className="bg-blue-500 text-white px-4 py-2 rounded"
+          className="flex items-center gap-2 px-5 py-2 rounded-full bg-blue-500 text-white font-semibold shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-300 active:scale-95"
         >
           Add
         </button>
